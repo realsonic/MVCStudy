@@ -1,0 +1,9 @@
+﻿@using Lesson03_Self.Models
+@model IEnumerable<Lesson03_Self.Models.Product>
+
+<ul>
+    @foreach (Product product in Model)
+    {
+        Html.RenderPartial("_ProductLI", product);
+    }
+</ul>

@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace WebApplication1.Controllers
 {
-    public class ProductController : Controller
+    public class SharedController : Controller
     {
-        // GET: Product
-        public ActionResult List()
+        // GET: Shared
+        public ActionResult Index()
         {
             return View();
         }

@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Lesson03_Self.Models.Product>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Products</title>
+</head>
+<body>
+<div>
+    <h1>List</h1>
+    @Html.Action("ProductsList", new {products = Model})
+
+    <h1>Table</h1>
+    @Html.Action("ProductsTable", new {products = Model})
+</div>
+</body>
+</html>

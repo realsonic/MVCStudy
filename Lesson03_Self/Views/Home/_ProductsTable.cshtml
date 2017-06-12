@@ -1,0 +1,19 @@
+﻿@using Lesson03_Self.Models
+@model IEnumerable<Product>
+
+<table>
+    <thead>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Price</td>
+        <td>Created Date</td>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (Product product in Model)
+    {
+        Html.RenderPartial("_ProductTR", product);
+    }
+    </tbody>
+</table>
